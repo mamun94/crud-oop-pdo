@@ -7,7 +7,7 @@
 ?>
 
 <?php 
-  $user = new Student();
+  $user = new Teacher();
 ?>
 
 <!-- Delete Data -->
@@ -17,9 +17,8 @@
     if($user->delete($id)){
       echo "<span class='delete'> Data Deleted Successfully...</span>";
     }
-  }
+}
 ?>
-
 
 <section class="mainleft">
 
@@ -144,8 +143,8 @@
         <td><?php echo $value['dep']; ?></td>
         <td><?php echo $value['age']; ?></td>
         <td>
-        <?php echo "<a href='index.php?action=edit&id=".$value['id']."'>Edit</a>" ?> ||
-        <?php echo "<a href='index.php?action=delete&id=".$value['id']."' onclick='myFunction()'>Delete</a>" ?>
+        <?php echo "<a href='teacher.php?action=edit&id=".$value['id']."'>Edit</a>" ?> ||
+        <?php echo "<a href='teacher.php?action=delete&id=".$value['id']."' onclick='myFunction()'>Delete</a>" ?>
         </td>
     </tr> 
     <?php  } ?>

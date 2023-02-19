@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2023 at 06:58 AM
+-- Generation Time: Feb 19, 2023 at 11:24 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.24
 
@@ -45,7 +45,30 @@ INSERT INTO `tbl_student` (`id`, `name`, `dep`, `age`) VALUES
 (4, 'MD Tanvir', 'Admin', 32),
 (5, 'Kausar Al Mamun', 'WP', 29),
 (6, 'Nazmul Hasan', 'Webflow', 35),
-(11, 'Ibrahim', 'Office Boy', 29);
+(11, 'Ibrahim', 'Office Boy', 29),
+(12, 'Azad Bro', 'Leader', 36);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_teacher`
+--
+
+CREATE TABLE `tbl_teacher` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `dep` varchar(50) NOT NULL,
+  `age` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_teacher`
+--
+
+INSERT INTO `tbl_teacher` (`id`, `name`, `dep`, `age`) VALUES
+(1, 'Nurul Alom', 'CSE', 36),
+(2, 'Jabed khan', 'Math', 45),
+(3, 'Mahamudur Vai', 'IT Head Dep', 31);
 
 --
 -- Indexes for dumped tables
@@ -58,6 +81,12 @@ ALTER TABLE `tbl_student`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_teacher`
+--
+ALTER TABLE `tbl_teacher`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -65,7 +94,13 @@ ALTER TABLE `tbl_student`
 -- AUTO_INCREMENT for table `tbl_student`
 --
 ALTER TABLE `tbl_student`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `tbl_teacher`
+--
+ALTER TABLE `tbl_teacher`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

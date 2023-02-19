@@ -41,5 +41,5 @@
 
 <div class="content">
 <section class="subject">
-  <p>CRUD with PDO <span style="float:right"><a href="index.php">Create New</a></span><p>
+  <p>CRUD with PDO <span style="float:right"><a href="index.php">For Student</a> || <a href="teacher.php">For Teacher</a></span><p>
 </section>
